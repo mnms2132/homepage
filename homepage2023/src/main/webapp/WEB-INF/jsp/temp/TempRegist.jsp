@@ -30,7 +30,7 @@
 
 	<form action="${actionUrl}" method="post" name="tempVO">
 		<input type="hidden" name="tempId" value="${result.tempId}"/>
-		<label for="tempVal">값 정보 : 	</label>
+		<label for="tempVal">값 정보 : 	</label> 
 		<input type="text" id="tempVal" name="tempVal" value="${result.tempVal}"/>
 		<br/>
 		<c:choose>
