@@ -31,7 +31,7 @@ public class CrudServiceImpl extends EgovAbstractServiceImpl implements CrudServ
 	//Crud등록하기
 	public String insertCrud(CrudVO vo) throws Exception{
 		String id = idgenService.getNextStringId();
-		vo.setCrudId(id);		
+		vo.setCrudId(id);
 		crudMapper.insertCrud(vo);
 		
 		return id;
