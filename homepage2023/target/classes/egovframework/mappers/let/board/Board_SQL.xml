@@ -59,34 +59,19 @@
 	<sql id="selectBoardListWhere">
 		<where>
 			A.USE_AT = 'Y' 
-			<choose>
-				<when test='boardType == "IMAGE"'>
-					AND A.BOARD_TYPE = 'IMAGE'
-				</when>
-				<otherwise>					
-					AND A.BOARD_TYPE = 'NORMAL'
-				</otherwise>
-			</choose>
-			<choose>
-				<when test='noticeAt == "Y"'>
-					AND A.NOTICE_AT = 'Y'
-				</when>
-				<otherwise>
-					<if test='searchCondition != null and searchCondition != ""'>
-						<choose>
-							<when test = 'searchCondition == "0"'>
-								AND A.BOARD_SJ LIKE CONCAT('%', #{searchKeyword}, '%')
-							</when>
-							<when test = 'searchCondition == "1"'>
-								AND A.BOARD_CN LIKE CONCAT('%', #{searchKeyword}, '%')
-							</when>
-							<when test = 'searchCondition == "2"'>
-								AND A.FRST_REGISTER_ID LIKE CONCAT('%', #{searchKeyword}, '%')
-							</when>
-						</choose>
-					</if>
-				</otherwise>
-			</choose>
+			<if test='searchCondition != null and searchCondition != ""'>
+				<choose>
+					<when test = 'searchCondition == "0"'>
+						AND A.BOARD_SJ LIKE CONCAT('%', #{searchKeyword}, '%')
+					</when>
+					<when test = 'searchCondition == "1"'>
+						AND A.BOARD_CN LIKE CONCAT('%', #{searchKeyword}, '%')
+					</when>
+					<when test = 'searchCondition == "2"'>
+						AND A.FRST_REGISTER_ID LIKE CONCAT('%', #{searchKeyword}, '%')
+					</when>
+				</choose>
+			</if>
 		</where>
 	</sql>
 	

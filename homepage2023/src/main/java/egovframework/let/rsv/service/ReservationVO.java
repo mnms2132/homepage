@@ -14,7 +14,7 @@ public class ReservationVO extends ComDefaultVO implements Serializable{
 	//강사명
 	private String recNm;
 	//최대참가인원
-	private String maxAplyCnt;
+	private int maxAplyCnt;
 	//운영시작일
 	private String useBeginDt;
 	//운영종료일
@@ -22,7 +22,7 @@ public class ReservationVO extends ComDefaultVO implements Serializable{
 	//운영시작시간
 	private String useBeginTime;
 	//운영종료시간
-	private String useEndtime;
+	private String useEndTime;
 	//내용
 	private String resveCn;
 	//신청기간시작일
@@ -46,7 +46,7 @@ public class ReservationVO extends ComDefaultVO implements Serializable{
 	//신청자
 	private int applyCnt;
 	//예약상태
-	private String applyStyStatus;
+	private String applyStatus;
 	//승인된 신청자
 	private int applyFCnt;
 	//검색일자
@@ -76,10 +76,10 @@ public class ReservationVO extends ComDefaultVO implements Serializable{
 	public void setRecNm(String recNm) {
 		this.recNm = recNm;
 	}
-	public String getMaxAplyCnt() {
+	public int getMaxAplyCnt() {
 		return maxAplyCnt;
 	}
-	public void setMaxAplyCnt(String maxAplyCnt) {
+	public void setMaxAplyCnt(int maxAplyCnt) {
 		this.maxAplyCnt = maxAplyCnt;
 	}
 	public String getUseBeginDt() {
@@ -100,11 +100,11 @@ public class ReservationVO extends ComDefaultVO implements Serializable{
 	public void setUseBeginTime(String useBeginTime) {
 		this.useBeginTime = useBeginTime;
 	}
-	public String getUseEndtime() {
-		return useEndtime;
+	public String getUseEndTime() {
+		return useEndTime;
 	}
-	public void setUseEndtime(String useEndtime) {
-		this.useEndtime = useEndtime;
+	public void setUseEndTime(String useEndTime) {
+		this.useEndTime = useEndTime;
 	}
 	public String getResveCn() {
 		return resveCn;
@@ -172,11 +172,11 @@ public class ReservationVO extends ComDefaultVO implements Serializable{
 	public void setApplyCnt(int applyCnt) {
 		this.applyCnt = applyCnt;
 	}
-	public String getApplyStyStatus() {
-		return applyStyStatus;
+	public String getApplyStatus() {
+		return applyStatus;
 	}
-	public void setApplyStyStatus(String applyStyStatus) {
-		this.applyStyStatus = applyStyStatus;
+	public void setApplyStatus(String applyStatus) {
+		this.applyStatus = applyStatus;
 	}
 	public int getApplyFCnt() {
 		return applyFCnt;

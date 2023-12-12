@@ -22,6 +22,9 @@
 	        	<entry key="mail.gmailUser" value="polytechonly@gmail.com"/>
 	        	<entry key="mail.gmailUserName" value="Kyuri"/>
 	        	<entry key="mail.gmailPassword" value="rxtuxyfzkfubbgvm"/>
+	        	
+				<!-- 예약자 업로드 물리경로 -->
+				<entry key="rsvFileStorePath" value="${Globals.File}/upload/rsv"></entry>
 	        </map>
 		</property>
 	</bean>

@@ -30,7 +30,7 @@
 							<legend>로그인 입력폼</legend>
 							<span>
 								<label for="id"><img src="/asset/member/images/member/ico_id.svg" alt="아이디"></label>
-								<input type="text" id="id" name="id" value="" class="inp" title="아이디를 입력하세요." placeholder="아이디를 밉력하세요.">
+								<input type="text" id="id" name="id" value="" class="inp" title="아이디를 입력하세요." placeholder="아이디를 입력하세요.">
 							</span>
 							<span>
 								<label for="pwd"><img src="/asset/member/images/member/ico_pw.svg" alt="패스워드"></label>
